@@ -6,4 +6,6 @@ const app = express();
 
 app.use(morgan('dev'));
 
+app.use(require('./routes/route.js'));
+
 module.exports = app;
